@@ -1,0 +1,41 @@
+{
+    "name": "dynamic/silverstripe-elemental-section-navigation",
+    "description": "A block to display a list of links to child pages, or pages in current level",
+    "authors": [
+        {
+            "name": "Dynamic",
+            "email": "dev@dynamicagency.com",
+            "homepage": "http://www.dynamicagency.com"
+        }
+    ],
+    "keywords": [
+        "silverstripe", "elemental", "content", "blocks", "section", "navigation", "list"
+    ],
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "require": {
+        "dnadesign/silverstripe-elemental": "^2@dev",
+        "silverstripe/recipe-cms": "^1.0@dev",
+        "silverstripe/vendor-plugin": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\Section\\": "src/",
+            "Dynamic\\Elements\\Section\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
