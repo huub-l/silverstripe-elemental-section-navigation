@@ -26,6 +26,16 @@ A block to display a list of links to child pages, or pages in current level.
 
 Adds a block to display a list of links to child pages, or the pages in the current level. Useful for sidebar navigation.
 
+### Template Notes
+
+The default templates are based off [Bootstrap 4](https://getbootstrap.com/) classes/styling, specifically the [List Group](http://getbootstrap.com/docs/4.1/components/list-group/).
+
+
+## Screen Shots
+
+#### Front End sample of a Section Navigation Element
+![Front End sample of a Section Navigation Element](./readme-images/section-nav-block-sample.jpg)
+
 ## Getting more elements
 
 See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
