@@ -3,6 +3,8 @@
 namespace Dynamic\Elements\Section\Elements;
 
 use DNADesign\Elemental\Models\BaseElement;
+use DNADesign\Elemental\Models\ElementalArea;
+use DNADesign\ElementalList\Model\ElementList;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
 
@@ -30,6 +32,24 @@ class ElementSectionNavigation extends BaseElement
      * @var string
      */
     private static $table_name = 'ElementSectionNavigation';
+
+    /**
+     * @return null|\SilverStripe\ORM\DataObject
+     * @throws \SilverStripe\ORM\ValidationException
+     */
+    public function getPage()
+    {
+        $area = $this->Parent();
+
+        if ($area instanceof ElementalArea && $area->exists()) {
+            if ($area->getOwnerPage() instanceof ElementList && $area->getOwnerPage()->exists()) {
+                return $area->getOwnerPage()->getPage();
+            } else {
+                return $area->getOwnerPage();
+            }
+        }
+        return parent::getPage();
+    }
 
     /**
      * @return bool|\SilverStripe\ORM\SS_List

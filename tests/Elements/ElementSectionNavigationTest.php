@@ -2,8 +2,12 @@
 
 namespace Dynamic\Elements\Section\Tests;
 
+use DNADesign\Elemental\Models\ElementalArea;
+use Dynamic\Base\Test\TestBlogPost;
 use Dynamic\Elements\Section\Elements\ElementSectionNavigation;
+use Dynamic\Elements\Section\Test\TestPage;
 use SilverStripe\Core\Injector\Injector;
+use SilverStripe\Dev\Debug;
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\ORM\FieldType\DBField;
 
