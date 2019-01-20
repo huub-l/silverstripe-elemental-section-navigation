@@ -33,11 +33,11 @@ class ElementSectionNavigationTest extends SapphireTest
     /**
      *
      */
-    public function testGetElementSummary()
+    public function testGetSummary()
     {
         $object = $this->objFromFixture(ElementSectionNavigation::class, "one");
         $expected = DBField::create_field('HTMLText', '<p>Section Navigation</p>')->Summary(20);
-        $this->assertEquals($object->ElementSummary(), $expected);
+        $this->assertEquals($object->getSummary(), $expected);
     }
 
     /**
