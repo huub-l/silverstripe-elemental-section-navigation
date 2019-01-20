@@ -16,7 +16,7 @@ class ElementSectionNavigation extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'sectionnav-icon';
+    private static $icon = 'font-icon-menu';
 
     /**
      * @var string
