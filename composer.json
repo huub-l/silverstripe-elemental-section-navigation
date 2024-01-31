@@ -5,7 +5,7 @@
         {
             "name": "Dynamic",
             "email": "dev@dynamicagency.com",
-            "homepage": "http://www.dynamicagency.com"
+            "homepage": "https://www.dynamicagency.com"
         }
     ],
     "keywords": [
@@ -14,11 +14,11 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
-        "dnadesign/silverstripe-elemental": "^4.0",
-        "silverstripe/vendor-plugin": "^1.0"
+        "dnadesign/silverstripe-elemental": "^5.0",
+        "silverstripe/framework": "^5"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2"
+        "silverstripe/recipe-testing": "^3"
     },
     "config": {
         "process-timeout": 600
@@ -33,7 +33,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "3.x-dev"
         }
     }
 }
